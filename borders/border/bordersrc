@@ -1,0 +1,24 @@
+# Cyberpunk theme
+#!/bin/bash
+
+
+
+# Cyberpunk Neon Glow Config for JankyBorders
+
+options=(
+  # General settings
+  width=2.0
+  hidpi=on
+  style=round
+
+  # Active window color with a glow effect
+  active_color="glow(0xff00f0ff)" # Electric Cyan Glow
+
+  # Inactive window color
+  inactive_color=0xff4b0082 # Indigo/Deep Purple
+
+  # Make the border appear above window shadows
+  order=above
+)
+
+borders "${options[@]}"
