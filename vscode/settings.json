@@ -1,0 +1,118 @@
+{
+  // ↓↓↓ Font & Editor Appearance ↓↓↓
+  "editor.fontFamily": "PragmataPro Liga",
+  "editor.fontSize": 15, // Adjust to your preference
+  "editor.lineHeight": 1.6, // Gives your code some breathing room
+  "editor.fontLigatures": true, // Enables ligatures like '=>', '!=', '==='
+  "editor.letterSpacing": 0.5,
+  "editor.cursorStyle": "block",
+  "editor.cursorBlinking": "smooth",
+  "editor.minimap.enabled": false, // Removes the file preview on the side
+  "editor.renderLineHighlight": "gutter",
+  "editor.rulers": [80, 120], // Helps with code readability
+
+  // ↓↓↓ Syntax Highlighting with Bold/Italics ↓↓↓
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+          "punctuation.definition.comment",
+          "string.quoted.docstring.multi"
+        ],
+        "settings": {
+          "fontStyle": "italic",
+          "foreground": "#6a9955" // A slightly muted green for comments
+        }
+      },
+      {
+        "scope": [
+          "storage.type",
+          "storage.modifier", // e.g., static, final
+          "keyword.control", // e.g., if, for, while
+          "constant.language", // e.g., true, false, null
+          "variable.language.this",
+          "variable.language.super"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          "entity.name.type", // e.g., Class, Struct, Interface, Type names
+          "entity.other.inherited-class"
+        ],
+        "settings": {
+          "fontStyle": "italic bold"
+        }
+      },
+      {
+        "scope": [
+          "entity.name.function",
+          "support.function", // e.g., console.log
+          "meta.function-call"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": ["variable.parameter"],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": ["entity.name.tag"],
+        "settings": {
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "markup.bold",
+        "settings": {
+          "fontStyle": "bold"
+        }
+      }
+    ]
+  },
+
+  // ↓↓↓ General Workbench & Window Appearance ↓↓↓
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Default Dark+", // This base theme is still used
+  "workbench.sideBar.location": "right",
+  "window.titleBarStyle": "custom",
+  "breadcrumbs.enabled": false, // Hides the file path navigation at the top of the editor
+  "vscode_vibrancy.opacity": 0.1,
+
+  // ↓↓↓ UI Cleanup (Hiding unnecessary elements) ↓↓↓
+  "workbench.colorCustomizations": {
+    "editor.background": "#121212",
+    "editorGutter.background": "#00000000",
+    "editorGroupHeader.tabsBackground": "#00000000",
+    "tab.border": "#00000000",
+    "activityBar.background": "#0c0c0c",
+    "activityBar.border": "#00000000",
+    "sideBar.background": "#0c0c0c",
+    "sideBar.border": "#00000000",
+    "statusBar.background": "#0c0c0c",
+    "statusBar.border": "#00000000",
+    "statusBar.noFolderBackground": "#0c0c0c",
+    "titleBar.activeBackground": "#0c0c0c",
+    "titleBar.inactiveBackground": "#0c0c0c",
+    "titleBar.border": "#00000000",
+    "scrollbar.shadow": "#00000000",
+    "editor.lineHighlightBackground": "#ffffff09",
+    "editor.lineHighlightBorder": "#ffffff09",
+    "terminal.background": "#00000000"
+  },
+
+  // ↓↓↓ Your Other Settings (Kept from your original config) ↓↓↓
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "terminal.integrated.gpuAcceleration": "off",
+  "window.systemColorTheme": "dark",
+  "window.autoDetectColorScheme": false
+}
